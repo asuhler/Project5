@@ -56,7 +56,7 @@ public class MyService extends Service {
 
 
 
-        Toast.makeText(this, "Count = " + count, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Count = " + count, Toast.LENGTH_SHORT).show();
         Log.e(TAG, "Count = " + count);
 
 		return 0;
