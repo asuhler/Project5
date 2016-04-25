@@ -8,6 +8,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <receiver android:name=".MyReceiver">
+            <intent-filter>
+                <action android:name="com.hello.rec" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MyService">
+
+        </service>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

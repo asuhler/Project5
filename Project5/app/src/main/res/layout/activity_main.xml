@@ -1,34 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.example.austin.project5.MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.library1.example.perkins.br_service_alarm_noti_sound.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add One Egg"
+            android:id="@+id/Button_Add_1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="addOneEgg"
+            android:layout_gravity="center_horizontal"
+            android:nestedScrollingEnabled="false" />
 
-    </android.support.design.widget.AppBarLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add 2 eggs"
+            android:id="@+id/Button_Add_2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="addTwoEggs"
+            android:layout_gravity="center_horizontal" />
 
-    <include layout="@layout/content_main" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtract 1 Egg"
+            android:id="@+id/Button_Sub_1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="subOneEgg"
+            android:layout_gravity="center_horizontal" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Breakfast"
+            android:id="@+id/Make_Breakfast"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="makeBreakfast"
+            android:layout_gravity="center_horizontal" />
 
-</android.support.design.widget.CoordinatorLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>
